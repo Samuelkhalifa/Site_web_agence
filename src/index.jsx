@@ -3,6 +3,9 @@ import React from 'react';
 import {createRoot} from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+//IMPORT CSS
+import './style.css'
+
 //IMPORT PAGES
 import Home from './pages/Home';
 import About from './pages/About';
@@ -15,6 +18,7 @@ import Navbar from './components/Navbar';
 const App = () => {
   return(
     <BrowserRouter>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
