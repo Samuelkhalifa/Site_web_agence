@@ -19,11 +19,13 @@ const App = () => {
   return(
     <BrowserRouter>
       <Navbar />
+      <div className='container'>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/works" element={<Works />} />
       </Routes>
+      </div>
     </BrowserRouter>
   )
 };
