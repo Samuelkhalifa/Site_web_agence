@@ -1,18 +1,24 @@
+//IMPORT REACT SETTINGS
 import React from 'react';
 import {createRoot} from 'react-dom/client';
-import { useState } from "react";
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+//IMPORT PAGES
+import Home from './pages/Home';
+import About from './pages/About';
+import Works from './pages/Works';
 
-import Home from './Home';
-import About from './Home';
-import Works from './Home';
+//IMPORT COMPONENTS
+import Navbar from './components/Navbar';
 
 
 const App = () => {
   return(
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/works" element={<Works />} />
       </Routes>
     </BrowserRouter>
   )
