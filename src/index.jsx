@@ -10,6 +10,7 @@ import './style.css'
 import Home from './pages/Home';
 import About from './pages/About';
 import Works from './pages/Works';
+import Studycase from './components/Studycase';
 
 //IMPORT COMPONENTS
 import Navbar from './components/Navbar';
@@ -23,7 +24,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/works" element={<Works />} />
+        <Route path="/works" element={<Works />}>
+          <Route path="/works/:id" element={<Studycase />}></Route>
+        </Route>
       </Routes>
       </div>
     </BrowserRouter>

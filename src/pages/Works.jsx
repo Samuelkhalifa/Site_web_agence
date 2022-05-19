@@ -1,4 +1,4 @@
-import Projets from "./Projets";
+import Projets from "../components/Projets";
 
 const Works = () => {
   return(
