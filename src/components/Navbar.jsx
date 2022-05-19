@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+
+
 const Navbar = () => {
   return(
   <nav class="navbar navbar-expand-lg bg-light">
@@ -8,13 +11,13 @@ const Navbar = () => {
       <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="/">Home</a>
+            <Link to="/" class="nav-link active">Home</Link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/about">About</a>
+            <Link to="/about" class="nav-link">About us</Link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/works">Works</a>
+            <Link to="/works" class="nav-link">Our Works</Link>
           </li>
         </ul>
         <button type="button" class="btn btn-dark">Dark Mode</button>
